@@ -1,0 +1,136 @@
+:root {
+    --bg: #050505;
+    --text: #ffffff;
+    --accent: #00ffcc;
+    --font-main: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; cursor: none; }
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-family: var(--font-main);
+    overflow: hidden; /* Modern portfolios often use smooth scroll, keeping it clean for now */
+}
+
+/* --- Cursor 2.0 --- */
+.cursor {
+    width: 35px;
+    height: 35px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    pointer-events: none;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: width 0.5s cubic-bezier(0.19, 1, 0.22, 1), height 0.5s cubic-bezier(0.19, 1, 0.22, 1), background 0.3s;
+}
+
+.cursor-inner {
+    width: 4px;
+    height: 4px;
+    background: var(--accent);
+    border-radius: 50%;
+}
+
+/* Cursor Crush State */
+.cursor.crush {
+    width: 80px;
+    height: 80px;
+    background: rgba(0, 255, 204, 0.1);
+    border-color: var(--accent);
+}
+
+/* --- Navbar Aesthetic --- */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 60px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo { font-size: 2rem; font-weight: 900; color: var(--text); transition: transform 0.3s ease; }
+.logo span { color: var(--accent); }
+
+.nav-links { display: flex; align-items: center; gap: 50px; }
+.nav-item {
+    text-decoration: none;
+    color: var(--text);
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    transition: 0.3s;
+}
+
+/* --- Hero Visuals --- */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.hero-image-container {
+    position: absolute;
+    z-index: 1;
+}
+
+.hero-image-wrapper {
+    width: 450px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 5px;
+    filter: grayscale(1) brightness(0.6);
+    transition: filter 0.8s ease, transform 0.2s ease-out;
+}
+
+.hero-image-wrapper:hover {
+    filter: grayscale(0) brightness(1);
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    scale: 1.2;
+    transition: transform 0.5s ease-out;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    pointer-events: none; /* Allows mouse to hit image behind text */
+}
+
+.hero-title {
+    font-size: clamp(4rem, 12vw, 10rem);
+    font-weight: 900;
+    line-height: 0.8;
+    text-transform: uppercase;
+}
+
+.hero-title .outline {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.4);
+}
+
+.hero-title em { font-family: var(--font-serif); font-weight: 400; text-transform: none; }
+
+.line { display: inline-block; overflow: hidden; }
+
+/* --- Reveal Animation --- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(100px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-title .line { animation: fadeInUp 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards; }
