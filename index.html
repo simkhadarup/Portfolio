@@ -5,172 +5,191 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rup Simkhada | Designer & Technologist</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Playfair+Display:ital,wght@1,900&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="cursor">
-        <div class="cursor-inner"></div>
-    </div>
-
     <nav class="navbar">
-        <div class="logo magnetic">RUP<span>.S</span></div>
+        <div class="logo">RUP<span>.S</span></div>
         <div class="nav-links">
-            <a href="#about" class="nav-item magnetic">About</a>
-            <a href="#skills" class="nav-item magnetic">Skills</a>
-            <a href="#projects" class="nav-item magnetic">Selected Works</a>
-            <a href="#contact" class="nav-item magnetic nav-cta">Let's Talk</a>
+            <a href="#about">About</a>
+            <a href="#skills">Expertise</a>
+            <a href="#projects">Work</a>
+            <a href="#contact" class="nav-cta">Let's Talk</a>
         </div>
     </nav>
-             <!--hero-->
+
     <header class="hero">
-        <div class="hero-image-wrapper">
-            <img src="images/rup.png" alt="Rup Simkhada" class="hero-img">
-        </div>
-        <div class="hero-content">
-            <span class="hero-subtitle">UI/UX & IT SUPPORT</span>
-            <h1 class="hero-title">
-                VISUAL <span class="serif-italic">Architect</span> <br>
-                <span class="outline">TECHNOLOGIST</span>
-            </h1>
+        <div class="hero-container">
+            <div class="hero-left">
+                <img src="images/rup.png" alt="Rup Simkhada" class="hero-img">
+            </div>
+            <div class="hero-right">
+                <span class="hero-subtitle">UI/UX & IT SUPPORT</span>
+                <h1 class="hero-title">
+                    VISUAL <span class="serif-italic">Architect</span> <br>
+                    <span class="outline">TECHNOLOGIST</span>
+                </h1>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn-main">View Projects</a>
+                </div>
+            </div>
         </div>
     </header>
 
-    <div class="marquee">
-        <div class="marquee-content">
-            UI/UX DESIGNER • IT SPECIALIST • GRAPHIC DESIGNER • SYSTEM ADMINISTRATOR • 
-            UI/UX DESIGNER • IT SPECIALIST • GRAPHI DESIGNER • SYSTEM ADMINISTRATOR • 
-        </div>
-    </div>
-
-    <section class="about" id="about">
-        <div class="about-container">
-            <div class="about-left">
-                <h2 class="about-name">Rup <br> <em>Simkhada</em></h2>
-                <p class="about-bio">
-                    A multidisciplinary creator bridging the gap between high-end aesthetics and technical infrastructure. Currently studying Information Technology at <strong>Lincoln University College</strong>.
-                </p>
-            </div>
-            <div class="about-right">
-                <div class="about-info-item">
-                    <span class="label">Education</span>
-                    <p>Information Technology<br><em>Lincoln University College</em></p>
+             <section class="about" id="about">
+        <div class="container">
+            <div class="about-grid">
+                <div class="about-text">
+                    <h2 class="section-title">ABOUT ME<span>.</span></h2>
+                    <p class="big-p">A multidisciplinary creator bridging the gap between high-end design and technical infrastructure.</p>
+                    <p class="sub-p">Currently studying Information Technology at <strong>Lincoln University College</strong>, I focus on building systems that are as functional as they are beautiful.</p>
+                    
+                    <a href="assets/rup-cv.pdf" download class="btn-cv">
+                        <span>Download CV</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v4m4-10l5 5 5-5m-5-5v12"/></svg>
+                    </a>
                 </div>
-                <div class="about-info-item">
-                    <span class="label">Location</span>
-                    <p>Kathmandu, Nepal</p>
-                </div>
-            </div>
-        </div>
-    </section>
-                     <!--skills-->
-    <section class="skills" id="skills">
-        <h2 class="section-title">EXPERTISE<span>.</span></h2>
-        <div class="skills-grid">
-            <div class="skill-category">
-                <h3 class="category-label">DESIGN</h3>
-                <ul>
-                    <li>
-                        <div class="skill-info"><span>UI/UX Design</span><span class="skill-level">95%</span></div>
-                        <div class="skill-bar-container"><div class="skill-progress" data-width="95%"></div></div>
-                    </li>
-                    <li>
-                        <div class="skill-info"><span>Figma / Adobe CC</span><span class="skill-level">90%</span></div>
-                        <div class="skill-bar-container"><div class="skill-progress" data-width="90%"></div></div>
-                    </li>
-                    <li>
-                        <div claass="skill-info"><span>Photoshop</span><span class="skill-level">95%</span></div>
-                        <div class="skill-bar-container"><div class="skill-progress" data-width="95%"></div></div>
-                </ul>
-            </div>
-            <div class="skill-category">
-                <h3 class="category-label">TECHNOLOGY</h3>
-                <ul>
-                    <li>
-                        <div class="skill-info"><span>IT Support</span><span class="skill-level">85%</span></div>
-                        <div class="skill-bar-container"><div class="skill-progress" data-width="85%"></div></div>
-                    </li>
-                    <li>
-                        <div class="skill-info"><span>System Administration</span><span class="skill-level">80%</span></div>
-                        <div class="skill-bar-container"><div class="skill-progress" data-width="80%"></div></div>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </section>
-  
-    <!--PROJECTS-->
-
-    <section class="projects" id="projects">
-    <h2 class="section-title">Selected <em>Works</em></h2>
-    <div class="projects-grid">
-        
-        <div class="project-card magnetic">
-            <div class="card-image"><img src="images/project1.png" alt="Work"></div>
-            <div class="card-content">
-                <span class="card-cat">UI/UX</span>
-                <h3>Peak Promotion Trading Website</h3>
-                <p>High-end web application design.</p>
-            </div>
-        </div>
-
-        <div class="project-card magnetic">
-            <div class="card-image"><img src="images/p2.png" alt="Work"></div>
-            <div class="card-content">
-                <span class="card-cat">Design</span>
-                <h3>Logo Design</h3>
-                <p>Designed Logo</p>
-            </div>
-        </div>
-
-        <div class="project-card magnetic">
-            <div class="card-image">
-                <img src="images/p3.png" alt="Work">
-            </div>
-            <div class="card-content">
-                <span class="card-cat">IT Helpdesk Ticket System</span>
-                <h3>UI/UX • Web Application</h3>
-                <p>A modern IT helpdesk web application designed to simplify issue reporting and ticket management.</p>
-                
-                <div class="card-actions">
-                    <a href="https://simkhadarup.github.io/it-helpdesk-ticket-system/" target="_blank" class="btn-live">Live Demo</a>
-                    <a href="https://github.com/simkhadarup/it-helpdesk-ticket-system" target="_blank" class="btn-github">GitHub</a>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</section>
-
-    <section class="contact" id="contact">
-        <h2 class="section-title">Let's <em>Talk</em></h2>
-        <div class="contact-wrapper">
-            <form class="contact-form">
-                <div class="input-group"><input type="text" placeholder="Name" required></div>
-                <div class="input-group"><input type="email" placeholder="Email" required></div>
-                <div class="input-group"><textarea placeholder="Message" rows="4" required></textarea></div>
-                <button type="submit" class="submit-btn magnetic">Send Message</button>
-            </form>
-            <div class="contact-links">
-                <div class="link-group">
-                    <span class="label">Quick Actions</span>
-                    <a href="cv.pdf" target="_blank" class="action-link magnetic">View CV</a>
-                    <a href="https://github.com/simkhadarup" target="_blank" class="action-link magnetic">GitHub Profile</a>
-                </div>
-                <div class="link-group">
-                    <span class="label">Socials</span>
-                    <div class="social-grid">
-                        <a href="https://linkedin.com/in/rup-profile" target="_blank" class="social-item magnetic">LinkedIn</a>
-                        <a href="https://www.facebook.com/rup.simkhada.7" target="_blank" class="social-item magnetic">Facebook</a>
-                        <a href="https://instagram.com/simkhadarup" target="_blank" class="social-item magnetic">Instagram</a>
+                <div class="about-details">
+                    <div class="detail-item">
+                        <span class="label">Email</span>
+                        <p>si.rup24@ncmt.edu.np</p> </div>
+                    <div class="detail-item">
+                        <span class="label">Education</span>
+                        <p>Bachelor Of Information Technology - Lincoln University College</p>
+                    </div>
+                    <div class="detail-item">
+                        <span class="label">Location</span>
+                        <p>Kathmandu, Nepal</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="mini-footer">
-        <p>&copy; 2026 Rup Simkhada. Built with passion & IT precision.</p>
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">EXPERTISE<span>.</span></h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>DESIGN</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>UI/UX Design</span><span>95%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 95%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>Figma / Adobe CC</span><span>90%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 90%"></div></div>
+                    </div>
+                </div>
+                <div class="skill-card">
+                    <h3>TECHNOLOGY</h3>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>IT Support</span><span>85%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 85%"></div></div>
+                    </div>
+                    <div class="skill-item">
+                        <div class="skill-info"><span>System Admin</span><span>80%</span></div>
+                        <div class="bar-bg"><div class="bar-fill" style="width: 80%"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="projects" id="projects">
+        <div class="container">
+            <h2 class="section-title">SELECTED WORKS<span>.</span></h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="card-image"><img src="images/p3.png" alt="Helpdesk"></div>
+                    <div class="card-content">
+                        <span class="card-cat">Web Application</span>
+                        <h3>IT Helpdesk Ticket System</h3>
+                        <p>Modern issue reporting and ticket management system.</p>
+                        <div class="card-btns">
+                            <a href="https://simkhadarup.github.io/it-helpdesk-ticket-system/" target="_blank" class="btn-live">Live Demo</a>
+                            <a href="https://github.com/simkhadarup/it-helpdesk-ticket-system" target="_blank" class="btn-git">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="card-image"><img src="images/project1.png" alt="Trading"></div>
+                    <div class="card-content">
+                        <span class="card-cat">UI/UX</span>
+                        <h3>Peak Promotion Website</h3>
+                        <p>Professional high-end trading platform design.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="contact-grid">
+                
+                <div class="contact-left">
+                    <span class="hero-subtitle">GET IN TOUCH</span>
+                    <h2 class="section-title">Let's <em>Connect</em><span>.</span></h2>
+                    <p class="contact-desc">
+                        Whether you have a question about a project or just want to say hi, my inbox is always open. I'll try my best to get back to you!
+                    </p>
+                    
+                    <div class="contact-data">
+                        <div class="data-item">
+                            <span class="label">Email Me</span>
+                            <a href="mailto:simkhadarup@gmail.com">simkhadarup@gmail.com</a>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Location</span>
+                            <p>Kathmandu, Nepal</p>
+                        </div>
+                        <div class="data-item">
+                            <span class="label">Socials</span>
+                            <div class="social-links">
+                                <a href="https://linkedin.com/in/rup-profile" target="_blank">LinkedIn</a>
+                                <a href="https://github.com/simkhadarup" target="_blank">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-right">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <input type="text" id="name" placeholder=" " required>
+                            <label for="name">Your Name</label>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" placeholder=" " required>
+                            <label for="email">Email Address</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" placeholder=" " rows="5" required></textarea>
+                            <label for="message">How can I help?</label>
+                        </div>
+                        <button type="submit" class="btn-main">
+                            <span>Send Message</span>
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2026 Rup Simkhada. All Rights Reserved.</p>
+                <div class="footer-socials">
+                    <a href="https://linkedin.com/in/rup-profile" target="_blank">LinkedIn</a>
+                    <a href="https://github.com/simkhadarup" target="_blank">GitHub</a>
+                    <a href="https://instagram.com/simkhadarup" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </div>
     </footer>
 
     <script src="script.js"></script>
