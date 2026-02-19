@@ -8,9 +8,10 @@ This is my personal portfolio website built to showcase my projects, skills, and
 It serves as a central place to learn more about me and my work.
 
 
-## 🛠️ Technologies Used
+##  Technologies Used
 
 - HTML
 - CSS
 
 - JS
+
